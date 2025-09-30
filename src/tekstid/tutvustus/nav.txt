@@ -1,0 +1,7 @@
+0;Kes ma olen?;kes-ma-olen
+1;Miks mulle meeldib veebiarendus?;miks-veebiarendus
+2;Mida ma juba oskan?;mida-juba-oskan
+3;Mida veel vaja õppida?;mida-veel-vaja
+4;Endast lähemalt;endast-lahemalt
+5;Minu tugevad ja nõrgad küljed;tugevad-norgad-kuljed
+6;Miks soovin töötada gotoAndPlay-s?;miks-gotoandplay
