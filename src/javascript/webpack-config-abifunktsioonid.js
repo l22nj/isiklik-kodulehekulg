@@ -8,6 +8,12 @@ const NAV_TUTVUSTUS = [
     "tugevad-norgad-kuljed",
     "miks-gotoandplay",
 ];
+const NAV_PROJEKTID = [
+    "isiklik-koduleht",
+    "hiina-jaagiteoreemi-uldistus",
+    "planeerija",
+    "ilmajaam",
+]
 
 function looTutvustusLehed(lehed) {
     lehed.push(new HtmlWebpackPlugin({
@@ -21,7 +27,20 @@ function looTutvustusLehed(lehed) {
             template: "./src/template.html",
         }));
     }
-    return lehed;
+}
+
+function looProjektiLehed(lehed) {
+    lehed.push(new HtmlWebpackPlugin({
+        filename: "projektid/index.html",
+        template: "./src/template.html",
+    }));
+    for (let rida of NAV_PROJEKTID) {
+        rida = rida.split(';');
+        lehed.push(new HtmlWebpackPlugin({
+            filename: `projektid/${rida}/index.html`,
+            template: "./src/template.html",
+        }));
+    }
 }
 
 function looLehed() {
@@ -31,6 +50,7 @@ function looLehed() {
         template: "./src/template.html",
     }));
     looTutvustusLehed(lehed);
+    looProjektiLehed(lehed);
     return lehed;
 }
 

@@ -1,12 +1,16 @@
 function lisaTekstiElement(tekst, tag) {
     let content = document.querySelector(".content");
     let element = document.createElement(tag);
-    element.innerText = tekst;
+    element.innerHTML = tekst;
     content.appendChild(element);
 }
 
-function lisaHeader(tekst) {
+function lisaHeader1(tekst) {
     lisaTekstiElement(tekst, "h1");
+}
+
+function lisaHeader2(tekst) {
+    lisaTekstiElement(tekst, "h2");
 }
 
 function lisaParagraaf(tekst) {
@@ -23,6 +27,11 @@ function tuhjendaContent() {
 function saaTootavKaust() {
     let kaustaPuu = window.location.pathname.split('/');
     return kaustaPuu[kaustaPuu.length-2];
+}
+
+function saaUlemKaust() {
+    let kaustaPuu = window.location.pathname.split('/');
+    return kaustaPuu[kaustaPuu.length-3];
 }
 
 function teeNoolParemale() {
@@ -94,13 +103,34 @@ function lisaNooled(navTekst) {
 function taidaContentTutvustus(tekst) {
     tuhjendaContent();
     let read = tekst.split("\n");
-    lisaHeader(read[0]);
+    lisaHeader1(read[0]);
     for (let i = 1; i < read.length; i++) {
         lisaParagraaf(read[i]);
     }
 }
 
-export default function taidaContent(tekst, navTekst) {
-    taidaContentTutvustus(tekst);
+function taidaContentProjektid(tekst, alapealkirjad) {
+    tuhjendaContent();
+    let read = tekst.split("\n");
+    alapealkirjad = alapealkirjad.split('\n');
+    lisaHeader1(read[0]);
+    lisaHeader2(alapealkirjad[0]);
+    lisaParagraaf(read[1]);
+    lisaHeader2(alapealkirjad[1]);
+    lisaParagraaf(read[2]);
+    lisaHeader2(alapealkirjad[2]);
+    lisaParagraaf(read[3]);
+    lisaHeader2(alapealkirjad[3]);
+    for (let i = 4; i < read.length; i++) {
+        lisaParagraaf(read[i]);
+    }
+}
+
+export default function taidaContent(tekst, alapealkirjad, navTekst) {
+    if (saaUlemKaust() === "tutvustus") {
+        taidaContentTutvustus(tekst);
+    } else if (saaUlemKaust() === "projektid") {
+        taidaContentProjektid(tekst, alapealkirjad);
+    }
     lisaNooled(navTekst);
 };

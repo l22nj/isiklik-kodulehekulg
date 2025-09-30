@@ -1,0 +1,5 @@
+Isiklik koduleht (Javascript/HTML/CSS)
+Luua ennast tööalaselt tutvustav veebileht
+Koodi jaoks ainult Javascript, HTML, CSS, muidu veel webpack jms
+Õppisin planeerima tööd arvuti juurest eemal, et töö läheks sujuvamalt. Kirjutasin palju pseudokoodi!
+<a href="https://github.com/l22nj/isiklik-kodulehekulg" target="_blank" rel="noopener noreferrer">https://github.com/l22nj/isiklik-kodulehekulg</a>
