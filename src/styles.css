@@ -78,6 +78,11 @@ nav > a {
     display: block;
 }
 
+.noolehoidik {
+    display: flex;
+    justify-content: space-between;
+}
+
 footer {
     background-color: white;
     padding: 1rem;

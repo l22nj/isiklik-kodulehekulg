@@ -25,7 +25,7 @@ function taidaLehtTutvustus() {
             indeks = rida[0];
         }
     }
-    taidaContent(tutvustusTekstid[indeks]);
+    taidaContent(tutvustusTekstid[indeks], navTekstTutvustus);
     taidaNav(navTekstTutvustus);
 }
 
