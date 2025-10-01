@@ -7,14 +7,21 @@ function lisaAnkur(tekst, link) {
 }
 
 function tuhjendaNav() {
-    let content = document.querySelector(".nav");
-    while (content.firstChild) {
-        content.removeChild(content.lastChild);
+    let nav = document.querySelector(".nav");
+    while (nav.firstChild) {
+        nav.removeChild(nav.lastChild);
     }
 }
 
-export default function taidaNav(tekst) {
+export function eemaldaNav() {
+    let nav = document.querySelector('.nav');
+    nav.remove();
+}
+
+export function taidaNav(tekst) {
     tuhjendaNav();
+    let nav = document.querySelector(".nav");
+    nav.visible = true;
     const read = tekst.split('\n');
     for (let rida of read) {
         rida = rida.split(';');

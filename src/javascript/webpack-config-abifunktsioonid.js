@@ -1,4 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 const NAV_TUTVUSTUS = [
     "kes-ma-olen",
     "miks-veebiarendus",
@@ -43,6 +45,25 @@ function looProjektiLehed(lehed) {
     }
 }
 
+function looCvLehed(lehed) {
+    lehed.push(new HtmlWebpackPlugin({
+        filename: "cv/index.html",
+        template: "./src/template.html",
+    }));
+    lehed.push(new HtmlWebpackPlugin({
+        filename: "cv/minu-cv/index.html",
+        template: "./src/template.html",
+    }));
+}
+
+function looCvKoopia(lehed) {
+    lehed.push(new CopyWebpackPlugin({
+        patterns: [
+            { from: './src/tekstid/cv/dummy-cv.pdf', to: "cv/minu-cv/cv.pdf" },
+        ]
+    }))
+}
+
 function looLehed() {
     let lehed = [];
     lehed.push(new HtmlWebpackPlugin({
@@ -51,6 +72,8 @@ function looLehed() {
     }));
     looTutvustusLehed(lehed);
     looProjektiLehed(lehed);
+    looCvLehed(lehed);
+    looCvKoopia(lehed);
     return lehed;
 }
 

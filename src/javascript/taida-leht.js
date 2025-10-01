@@ -1,5 +1,5 @@
 import taidaContent from "./taida-content.js";
-import taidaNav from "./taida-nav.js";
+import {taidaNav, eemaldaNav} from "./taida-nav.js";
 import {tutvustusTekstid, projektidTekstid, navTekstTutvustus, navTekstProjektid, alapealkirjad} from "./tekstifailid";
 
 function saaTootavKaust() {
@@ -11,7 +11,6 @@ function saaUlemKaust() {
     let kaustaPuu = window.location.pathname.split('/');
     return kaustaPuu[kaustaPuu.length-3];
 }
-
 
 function saaRead(tekst) {
     return tekst.split('\n');
@@ -53,14 +52,24 @@ function taidaLehtProjektid() {
     taidaNav(navTekstProjektid);
 }
 
+function taidaLehtCv() {
+    taidaContent("", "", "");
+    eemaldaNav();
+}
+
 export default function taidaLeht() {
     if (saaTootavKaust() === "dist") {
         location.href = location.href.split('/index.html')[0]
             + `/tutvustus/${saaRead(navTekstTutvustus)[0].split(';')[2]}/index.html`;
     }
+    if (saaTootavKaust() === "") {
+        location.href = location.href + "tutvustus/kes-ma-olen/index.html";
+    }
     if (saaUlemKaust() === "tutvustus") {
         taidaLehtTutvustus();
     } else if (saaUlemKaust() === "projektid") {
         taidaLehtProjektid();
+    } else if (saaUlemKaust() === "cv") {
+        taidaLehtCv();
     }
 }

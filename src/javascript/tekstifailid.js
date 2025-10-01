@@ -37,3 +37,7 @@ import nav2 from "../tekstid/projektid/nav.txt";
 
 export const navTekstTutvustus = nav1;
 export const navTekstProjektid = nav2;
+
+import minuCv from "../tekstid/cv/dummy-cv.pdf";
+
+export const cv = minuCv;

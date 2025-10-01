@@ -1,3 +1,5 @@
+import { cv } from "./tekstifailid.js";
+
 function lisaTekstiElement(tekst, tag) {
     let content = document.querySelector(".content");
     let element = document.createElement(tag);
@@ -126,11 +128,26 @@ function taidaContentProjektid(tekst, alapealkirjad) {
     }
 }
 
+function taidaContentCv() {
+    tuhjendaContent();
+    let content = document.querySelector('.content');
+    let cv = document.createElement('embed');
+    cv.src = "./cv.pdf";
+    cv.width = "100%";
+    cv.height = "100%";
+    content.appendChild(cv);
+    // Kas seda vaja ikka :D
+    content.style.height = "1000px";
+}
+
 export default function taidaContent(tekst, alapealkirjad, navTekst) {
     if (saaUlemKaust() === "tutvustus") {
         taidaContentTutvustus(tekst);
+        lisaNooled(navTekst);
     } else if (saaUlemKaust() === "projektid") {
         taidaContentProjektid(tekst, alapealkirjad);
+        lisaNooled(navTekst);
+    } else if (saaUlemKaust() === "cv") {
+        taidaContentCv();
     }
-    lisaNooled(navTekst);
 };

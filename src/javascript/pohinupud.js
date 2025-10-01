@@ -6,6 +6,7 @@ const cvNupp = document.querySelector("#cv");
 
 tutvustusNupp.dataset.indeks = saaRead(navTekstTutvustus)[0].split(';')[2];
 projektidNupp.dataset.indeks = saaRead(navTekstProjektid)[0].split(';')[2];
+cvNupp.dataset.indeks = "minu-cv";
 
 const nupud = [
     tutvustusNupp,
