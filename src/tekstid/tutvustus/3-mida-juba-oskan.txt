@@ -1,1 +1,7 @@
 Mida ma juba oskan?
+Alates maist olen teinud endale selgeks järgnevad teemad:
+<strong>Javascript.</strong> Olen teinud endale selgeks <em>Javascripti</em> eripärad ja süntaksi ning tunnen ennast selles võrdlemisi vabalt.
+<strong>HTML/CSS.</strong> Olen kujundanud oma senised veebiprojektid puhtalt <em>HTML-i/CSS-i</em> kasutades ning tunnen nende pakutavaid võimalusi.
+<strong>Git/GitHub.</strong>
+<strong>Webpack.</strong>
+Varasemast olen tuttav üldiste arvutiteadus- ja programmeerimispõhimõtega läbi <em>Python-i</em> ja <em>C++-i</em>. Mingil määral olen kasutanud ka <em>Java-t</em>.

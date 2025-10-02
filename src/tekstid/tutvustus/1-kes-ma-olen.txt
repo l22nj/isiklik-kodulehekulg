@@ -2,4 +2,4 @@ Kes ma olen?
 Minu nimi on Jakob Läänemets ning olen 21-aastane matemaatikatudeng Tartu Ülikoolis.
 Olen ammu huvitunud programmeerimisest ning viimasel ajal ka täpsemalt veebiarendusest.
 Armastan kohvi, kino ja raamatuid.
-(Siin lehel saab navigeerida klaviatuuril nooltega.)
+<em>Siin lehel saab navigeerida klaviatuurinooltega.</em>
