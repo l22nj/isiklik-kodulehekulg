@@ -1,1 +1,5 @@
-Ilmajaam (Javascript/HTML/CSS)
+Ilmajaam (Javascript / HTML / CSS)
+Luua leht, mis Visual Crossing API abil kuvab hetkeilma oma valitud linnas.
+Standardteek, Visual Crossing API
+Õppisin tundma API kasutamise põhimõtteid.
+<a href="https://github.com/l22nj/TOP-Project-Weather-App" target="_blank" rel="noopener noreferrer">https://github.com/l22nj/TOP-Project-Weather-App</a>
