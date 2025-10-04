@@ -1,5 +1,5 @@
 Isiklik koduleht (Javascript / HTML / CSS)
 Luua kergesti hallatav ennast tööalaselt tutvustav veebileht. Seesama, millel praegu olete.
 Javascripti standardteek, samuti erinevad npm skriptid (nt webpack).
-Sain lähedasemaks webpack-iga. Õppisin planeerima tööd arvuti juurest eemal, et töö läheks sujuvamalt. Kirjutasin palju pseudokoodi!
+Sain lähedasemaks webpack-iga. Õppisin planeerima tööd arvuti juurest eemal, et töö läheks sujuvamalt. Kirjutasin palju pseudokoodi! Lõpupoole sain aru, et tekstifailid oleks ehk hea olnud json-is kirjutada.
 <a href="https://github.com/l22nj/isiklik-kodulehekulg" target="_blank" rel="noopener noreferrer">https://github.com/l22nj/isiklik-kodulehekulg</a>

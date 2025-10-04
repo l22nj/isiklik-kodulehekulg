@@ -38,12 +38,14 @@ function saaUlemKaust() {
 
 function teeNoolParemale() {
     let nool = document.createElement("a");
+    nool.classList.add("p-nool");
     nool.innerText = ">>";
     return nool;
 }
 
 function teeNoolVasakule() {
     let nool = document.createElement("a");
+    nool.classList.add("v-nool");
     nool.innerText = "<<";
     return nool;
 }

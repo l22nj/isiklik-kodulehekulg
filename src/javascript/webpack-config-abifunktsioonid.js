@@ -64,6 +64,19 @@ function looCvKoopia(lehed) {
     }))
 }
 
+function looPildid(lehed) {
+    lehed.push(new CopyWebpackPlugin({
+        patterns: [
+            { from: './src/lilledk66gis.png', to: 'lilledk66gis.png' },
+        ]
+    }))
+    lehed.push(new CopyWebpackPlugin({
+        patterns: [
+            { from: './src/jakob-pingil.jpeg', to: 'jakob-pingil.jpeg' },
+        ]
+    }))
+}
+
 function looLehed() {
     let lehed = [];
     lehed.push(new HtmlWebpackPlugin({
@@ -74,6 +87,7 @@ function looLehed() {
     looProjektiLehed(lehed);
     looCvLehed(lehed);
     looCvKoopia(lehed);
+    looPildid(lehed);
     return lehed;
 }
 
