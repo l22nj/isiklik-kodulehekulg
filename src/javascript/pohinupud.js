@@ -4,9 +4,9 @@ const tutvustusNupp = document.querySelector("#tutvustus")
 const projektidNupp = document.querySelector("#projektid");
 const cvNupp = document.querySelector("#cv");
 
-tutvustusNupp.dataset.indeks = saaRead(navTekstTutvustus)[0].split(';')[2];
-projektidNupp.dataset.indeks = saaRead(navTekstProjektid)[0].split(';')[2];
-cvNupp.dataset.indeks = "minu-cv";
+tutvustusNupp.dataset.indeks = "/tutvustus/kes-ma-olen/index.html";
+projektidNupp.dataset.indeks = "/projektid/isiklik-koduleht/index.html";
+cvNupp.dataset.indeks = "/cv/minu-cv/index.html";
 
 const nupud = [
     tutvustusNupp,
@@ -21,7 +21,7 @@ for (let nupp of nupud) {
 }
 
 function vahetaLehte(nupp) {
-    document.location.href = `../../${nupp.id}/${nupp.dataset.indeks}/index.html`;
+    document.location.href = nupp.dataset.indeks;
 }
 
 function saaRead(tekst) {
