@@ -65,6 +65,9 @@ export default function taidaLeht() {
     if (saaTootavKaust() === "") {
         location.href = location.href + "tutvustus/kes-ma-olen/index.html";
     }
+    if (saaTootavKaust() === "isiklik-kodulehekulg") {
+        location.href = location.href + "tutvustus/kes-ma-olen/index.html";
+    }
     if (saaUlemKaust() === "tutvustus") {
         taidaLehtTutvustus();
     } else if (saaUlemKaust() === "projektid") {
