@@ -16,16 +16,18 @@ export const tutvustusTekstid = [
     tutvustus7,
 ];
 
-import projektid1 from "../tekstid/projektid/1-isiklik-koduleht.txt";
-import projektid2 from "../tekstid/projektid/2-hiina-jaagiteoreemi-uldistus.txt";
-import projektid3 from "../tekstid/projektid/3-planeerija.txt";
-import projektid4 from "../tekstid/projektid/4-ilmajaam.txt";
+import projektid1 from "../tekstid/projektid/1-uldiselt-projektidest.txt";
+import projektid2 from "../tekstid/projektid/2-isiklik-koduleht.txt";
+import projektid3 from "../tekstid/projektid/3-hiina-jaagiteoreemi-uldistus.txt";
+import projektid4 from "../tekstid/projektid/4-planeerija.txt";
+import projektid5 from "../tekstid/projektid/5-ilmajaam.txt";
 
 export const projektidTekstid = [
     projektid1,
     projektid2,
     projektid3,
-    projektid4
+    projektid4,
+    projektid5,
 ]
 
 import projektidAlapealkirjad from "../tekstid/projektid/alapealkirjad.txt";

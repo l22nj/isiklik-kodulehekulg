@@ -4,8 +4,9 @@
 }
 
 html {
-    background-image: linear-gradient(to bottom, aliceblue, #3f4a4c);
+    background-image: linear-gradient(to bottom, aliceblue, #c3e0ea);
     min-height: 100vh;
+    /*background-color: #c3e0ea;*/
 }
 
 body {
@@ -84,7 +85,7 @@ button {
     display: flex;
     justify-content: space-between;
     border-radius: 1rem;
-    border: 12px double #c6d4d8;
+    border: 12px double #f4f2f2;
 }
 
 .content {

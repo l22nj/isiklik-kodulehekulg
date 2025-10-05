@@ -1,4 +1,5 @@
-0;Isiklik koduleht (Javascript/HTML/CSS);isiklik-koduleht
-1;Hiina jäägiteoreemi üldistus (C++);hiina-jaagiteoreemi-uldistus
-2;Planeerija (Javascript/HTML/CSS);planeerija
-3;Ilmajaam (Javascript/HTML/CSS);ilmajaam
+0;Üldiselt projektidest;uldiselt-projektidest
+1;Isiklik koduleht (Javascript/HTML/CSS);isiklik-koduleht
+2;Hiina jäägiteoreemi üldistus (C++);hiina-jaagiteoreemi-uldistus
+3;Planeerija (Javascript/HTML/CSS);planeerija
+4;Ilmajaam (Javascript/HTML/CSS);ilmajaam

@@ -1,5 +1,3 @@
-import { cv } from "./tekstifailid.js";
-
 function lisaTekstiElement(tekst, tag) {
     let content = document.querySelector(".content");
     let element = document.createElement(tag);
@@ -105,6 +103,15 @@ function lisaNooled(navTekst) {
 }
 
 function taidaContentTutvustus(tekst) {
+    tuhjendaContent();
+    let read = tekst.split("\n");
+    lisaHeader1(read[0]);
+    for (let i = 1; i < read.length; i++) {
+        lisaParagraaf(read[i]);
+    }
+}
+
+function taidaContentProjektidIndeks(tekst) {
     tuhjendaContent();
     let read = tekst.split("\n");
     lisaHeader1(read[0]);

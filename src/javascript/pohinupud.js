@@ -4,9 +4,9 @@ const tutvustusNupp = document.querySelector("#tutvustus")
 const projektidNupp = document.querySelector("#projektid");
 const cvNupp = document.querySelector("#cv");
 
-tutvustusNupp.dataset.indeks = "/isiklik-kodulehekulg/tutvustus/kes-ma-olen/index.html";
-projektidNupp.dataset.indeks = "/isiklik-kodulehekulg/projektid/isiklik-koduleht/index.html";
-cvNupp.dataset.indeks = "/isiklik-kodulehekulg/cv/minu-cv/index.html";
+tutvustusNupp.dataset.indeks = "/tutvustus/kes-ma-olen/index.html";
+projektidNupp.dataset.indeks = "/projektid/uldiselt-projektidest/index.html";
+cvNupp.dataset.indeks = "/cv/minu-cv/index.html";
 
 const nupud = [
     tutvustusNupp,

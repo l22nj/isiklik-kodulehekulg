@@ -11,6 +11,7 @@ const NAV_TUTVUSTUS = [
     "miks-gotoandplay",
 ];
 const NAV_PROJEKTID = [
+    "uldiselt-projektidest",
     "isiklik-koduleht",
     "hiina-jaagiteoreemi-uldistus",
     "planeerija",
