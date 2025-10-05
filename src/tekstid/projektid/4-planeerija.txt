@@ -1,5 +1,5 @@
 Planeerija (Javascript / HTML / CSS)
 Luua leht, mis võimaldab hallata kindlateks kuupäevadeks seatud ülesandeid.
 Standardteek.
-Õppisin lähedamalt tundma <em>one responsibility</em> põhimõtet - igal funktsioonil, objektil ainult üks ülesanne lihtsama haldamise nimel.
+Õppisin lähedamalt tundma <em>one responsibility</em> põhimõtet - igal funktsioonil, klassil peaks olema ainult üks ülesanne projekti lihtsama haldamise nimel.
 <a href="https://github.com/l22nj/TOP-Project-ToDo-list" target="_blank" rel="noopener noreferrer">https://github.com/l22nj/TOP-Project-ToDo-list</a>

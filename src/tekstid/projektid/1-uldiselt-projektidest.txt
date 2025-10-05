@@ -1,0 +1,7 @@
+Üldiselt projektidest
+Olen teinud palju väikeseid projekte <a href="https://theodinproject.com" target="_blank" rel="noopener noreferrer">The Odin Project</a> kursuse raames.
+Need pole aga viimistletud lõpptulemused (ega tegelikult praegusel kujul jagamiseks päris valmis), vaid on mõeldud kindlate veebiarenduse juures olevate aspektide selgekstegemiseks.
+Otsustasin kaks neist (projektide seast viimased) siiski siia lehele lisada, et näidata, mis programmeerimiskogemus mul on olemas.
+Veel olen lisanud projektina käesoleva kodulehe ja C++ kursuse arvestustöö.
+<a href="https://github.com/l22nj" target="_blank" rel="noopener noreferrer">Siin ka minu GitHub.</a>
+<em>Kuna kõik projektid siin on tehtud õppetöö eesmärgil, siis pole ma tehisaru nende juures kasutanud.</em>

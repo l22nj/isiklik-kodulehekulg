@@ -29,11 +29,6 @@ function saaTootavKaust() {
     return kaustaPuu[kaustaPuu.length-2];
 }
 
-function saaUlemKaust() {
-    let kaustaPuu = window.location.pathname.split('/');
-    return kaustaPuu[kaustaPuu.length-3];
-}
-
 function teeNoolParemale() {
     let nool = document.createElement("a");
     nool.classList.add("p-nool");
@@ -93,7 +88,7 @@ function lisaNoolVasakule(navTekst) {
     });
 }
 
-function lisaNooled(navTekst) {
+export function lisaNooled(navTekst) {
     let content = document.querySelector(".content");
     let noolehoidik = document.createElement("div");
     noolehoidik.classList.add("noolehoidik");
@@ -102,7 +97,7 @@ function lisaNooled(navTekst) {
     lisaNoolParemale(navTekst);
 }
 
-function taidaContentTutvustus(tekst) {
+export function taidaContentTutvustus(tekst) {
     tuhjendaContent();
     let read = tekst.split("\n");
     lisaHeader1(read[0]);
@@ -111,7 +106,7 @@ function taidaContentTutvustus(tekst) {
     }
 }
 
-function taidaContentProjektidIndeks(tekst) {
+export function taidaContentProjektidIndeks(tekst) {
     tuhjendaContent();
     let read = tekst.split("\n");
     lisaHeader1(read[0]);
@@ -120,7 +115,7 @@ function taidaContentProjektidIndeks(tekst) {
     }
 }
 
-function taidaContentProjektid(tekst, alapealkirjad) {
+export function taidaContentProjektid(tekst, alapealkirjad) {
     tuhjendaContent();
     let read = tekst.split("\n");
     alapealkirjad = alapealkirjad.split('\n');
@@ -137,7 +132,7 @@ function taidaContentProjektid(tekst, alapealkirjad) {
     }
 }
 
-function taidaContentCv() {
+export function taidaContentCv() {
     tuhjendaContent();
     let content = document.querySelector('.content');
     let cv = document.createElement('embed');
@@ -148,15 +143,3 @@ function taidaContentCv() {
     // Kas seda vaja ikka :D
     content.style.height = "1000px";
 }
-
-export default function taidaContent(tekst, alapealkirjad, navTekst) {
-    if (saaUlemKaust() === "tutvustus") {
-        taidaContentTutvustus(tekst);
-        lisaNooled(navTekst);
-    } else if (saaUlemKaust() === "projektid") {
-        taidaContentProjektid(tekst, alapealkirjad);
-        lisaNooled(navTekst);
-    } else if (saaUlemKaust() === "cv") {
-        taidaContentCv();
-    }
-};

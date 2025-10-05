@@ -3,5 +3,6 @@
 2;Mida ma juba oskan?;mida-juba-oskan
 3;Mida veel vaja õppida?;mida-veel-vaja
 4;Endast lähemalt;endast-lahemalt
-5;Minu tugevad ja nõrgad küljed;tugevad-norgad-kuljed
-6;Miks soovin praktikat gotoAndPlay-s?;miks-gotoandplay
+5;Minu tugevad küljed;tugevad-kuljed
+6;Minu nõrgad küljed;norgad-kuljed
+7;Miks soovin praktikat gotoAndPlay-s?;miks-gotoandplay

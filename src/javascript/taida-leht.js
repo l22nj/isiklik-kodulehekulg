@@ -1,4 +1,5 @@
-import taidaContent from "./taida-content.js";
+import {lisaNooled, taidaContentTutvustus, taidaContentCv, taidaContentProjektid, taidaContentProjektidIndeks}
+    from "./taida-content.js";
 import {taidaNav, eemaldaNav} from "./taida-nav.js";
 import {tutvustusTekstid, projektidTekstid, navTekstTutvustus, navTekstProjektid, alapealkirjad} from "./tekstifailid";
 
@@ -30,7 +31,8 @@ function taidaLehtTutvustus() {
             indeks = rida[0];
         }
     }
-    taidaContent(tutvustusTekstid[indeks], alapealkirjad, navTekstTutvustus);
+    taidaContentTutvustus(tutvustusTekstid[indeks]);
+    lisaNooled(navTekstTutvustus);
     taidaNav(navTekstTutvustus);
 }
 
@@ -48,12 +50,17 @@ function taidaLehtProjektid() {
             indeks = rida[0];
         }
     }
-    taidaContent(projektidTekstid[indeks], alapealkirjad, navTekstProjektid);
+    if (indeks === "0") {
+        taidaContentProjektidIndeks(projektidTekstid[indeks]);
+    } else {
+        taidaContentProjektid(projektidTekstid[indeks], alapealkirjad)
+    }
+    lisaNooled(navTekstProjektid);
     taidaNav(navTekstProjektid);
 }
 
 function taidaLehtCv() {
-    taidaContent("", "", "");
+    taidaContentCv();
     eemaldaNav();
 }
 

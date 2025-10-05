@@ -1,5 +1,6 @@
 Miks mulle meeldib veebiarendus?
 Eelmine aasta hakkasin tundma tugevamat huvi projektide loomise vastu, millel oleks mingisugune turuväärtus. Sain aru, et veebiarendus on selle juures hädavajalik.
 Alates maist olen aktiivselt tegelenud selle valdkonna endale selgeks tegemisega ja selle käigus on minu huvi veebiarenduse aina kasvanud.
+Armastan segu programmeerimisest ja disainist, mida veebiarendus endast kujutab.
+Samuti olen avastanud, et väga naudin seda osa veebiarendusest, kus tuleb mõelda, mis mingist projektist võib tulevikus edasi saada - ehk vaja on kirjutada selget, paindlikku ja taaskasutatavat koodi.
 Tunnen, et veebiarendusel on suur roll tulevikumaailma kujundamisel ning tahan olla sellest osa.
-<img alt="jakob" class="content-pilt" src="/lilledk66gis.png">

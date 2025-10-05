@@ -7,15 +7,24 @@ const NAV_TUTVUSTUS = [
     "mida-juba-oskan",
     "mida-veel-vaja",
     "endast-lahemalt",
-    "tugevad-norgad-kuljed",
+    "tugevad-kuljed",
+    "norgad-kuljed",
     "miks-gotoandplay",
 ];
+
 const NAV_PROJEKTID = [
     "uldiselt-projektidest",
     "isiklik-koduleht",
     "hiina-jaagiteoreemi-uldistus",
     "planeerija",
     "ilmajaam",
+]
+
+const PILDID = [
+    "jakob-pingil.jpeg",
+    "lilledk66gis.png",
+    "ykssarvik.jpg",
+    "jakob-va.jpg"
 ]
 
 function looTutvustusLehed(lehed) {
@@ -57,25 +66,28 @@ function looCvLehed(lehed) {
     }));
 }
 
-function looCvKoopia(lehed) {
+function kopeeriCv(lehed) {
     lehed.push(new CopyWebpackPlugin({
         patterns: [
-            { from: './src/tekstid/cv/dummy-cv.pdf', to: "cv/minu-cv/cv.pdf" },
+            {
+                from: './src/tekstid/cv/dummy-cv.pdf',
+                to: "cv/minu-cv/cv.pdf"
+            },
         ]
     }))
 }
 
-function looPildid(lehed) {
-    lehed.push(new CopyWebpackPlugin({
-        patterns: [
-            { from: './src/lilledk66gis.png', to: 'lilledk66gis.png' },
-        ]
-    }))
-    lehed.push(new CopyWebpackPlugin({
-        patterns: [
-            { from: './src/jakob-pingil.jpeg', to: 'jakob-pingil.jpeg' },
-        ]
-    }))
+function kopeeriPildid(lehed) {
+    for (pilt of PILDID) {
+        lehed.push(new CopyWebpackPlugin({
+            patterns: [
+                {
+                    from: `./src/pildid/${pilt}`,
+                    to: `isiklik-kodulehekulg/${pilt}`,
+                },
+            ]
+        }))
+    }
 }
 
 function looLehed() {
@@ -87,8 +99,8 @@ function looLehed() {
     looTutvustusLehed(lehed);
     looProjektiLehed(lehed);
     looCvLehed(lehed);
-    looCvKoopia(lehed);
-    looPildid(lehed);
+    kopeeriCv(lehed);
+    kopeeriPildid(lehed);
     return lehed;
 }
 
