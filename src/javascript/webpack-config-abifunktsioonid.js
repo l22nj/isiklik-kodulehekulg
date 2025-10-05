@@ -70,7 +70,7 @@ function kopeeriCv(lehed) {
     lehed.push(new CopyWebpackPlugin({
         patterns: [
             {
-                from: './src/tekstid/cv/dummy-cv.pdf',
+                from: './src/tekstid/cv/jakoblaanemets_cv.pdf',
                 to: "cv/minu-cv/cv.pdf"
             },
         ]

@@ -69,6 +69,7 @@ button {
     transition: background-color 0.05s ease-out,
         border-radius 0.05s ease-out,
         color 0.05s ease-out;
+    cursor: pointer;
 }
 
 .buttons > button:hover {

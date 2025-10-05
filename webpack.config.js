@@ -3,7 +3,7 @@ const pluginid = require("./src/javascript/webpack-config-abifunktsioonid.js");
 
 module.exports = {
     mode: "development",
-    entry: [ "./src/index.js", "./src/tekstid/cv/dummy-cv.pdf" ],
+    entry: [ "./src/index.js" ],
     output: {
         filename: "main.js",
         path: path.resolve(__dirname, "dist"),

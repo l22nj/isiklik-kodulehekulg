@@ -1,5 +1,3 @@
-import {navTekstTutvustus, navTekstProjektid} from "./tekstifailid";
-
 const tutvustusNupp = document.querySelector("#tutvustus")
 const projektidNupp = document.querySelector("#projektid");
 const cvNupp = document.querySelector("#cv");

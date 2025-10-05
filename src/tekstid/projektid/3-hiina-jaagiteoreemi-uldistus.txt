@@ -1,5 +1,5 @@
 Hiina jäägiteoreemi üldistus (C++)
-Luua <a href="" target="_blank" rel="noopener noreferrer">Hiina jäägiteoreemi</a> põhjal kongruentside süsteemi lahendaja, mis lubab jääkide andmist suvalise astme polünoomide suhtes, mitte ainult esimese.
+Luua <a href="https://en.wikipedia.org/wiki/Chinese_remainder_theorem" target="_blank" rel="noopener noreferrer">Hiina jäägiteoreemi</a> põhjal kongruentside süsteemi lahendaja, mis lubab jääkide andmist suvalise astme polünoomide suhtes, mitte ainult esimese.
 C++ standardteek, lisaks mõni matemaatikateek. Arvuteooria valemid TÜ kursuse põhjal.
 Sain aru testerite olulisusest ja kuidas testerite kasutamine muudab töö sujuvamaks ja kiiremaks. Minu esimene natukene suurem projekt.
 <a href="https://github.com/l22nj/chineseRemainderTheoremSolver" target="_blank" rel="noopener noreferrer">https://github.com/l22nj/chineseRemainderTheoremSolver</a>
