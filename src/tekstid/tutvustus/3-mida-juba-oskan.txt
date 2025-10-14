@@ -4,4 +4,5 @@ Alates maist olen teinud endale selgeks järgnevad teemad:
 <strong>HTML/CSS.</strong> Olen kujundanud oma senised veebiprojektid puhtalt HTML-i/CSS-i kasutades ning tunnen nende pakutavaid võimalusi.
 <strong>Git/GitHub.</strong> Oma õpiprojektides olen git-i kasutanud ning harjutanud <em>workflow-d</em> ka laiemalt, kui ainult <em>add</em> ja <em>commit</em>.
 <strong>Webpack.</strong> Oskan põhilisi võtteid oma projektide haldamiseks ja lähtefailide <em>bundle'imiseks</em>.
+<strong>SQL.</strong> Tunnen süntaksit ja saan aru, mida mis käsklus andmebaasiga teeb. Oskan teha ka keerulisemaid päringuid.
 Varasemast olen tuttav üldiste arvutiteadus- ja programmeerimispõhimõtega läbi Pythoni ja C++-i. Mingil määral olen kasutanud ka Javat.

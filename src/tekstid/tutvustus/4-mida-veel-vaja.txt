@@ -1,6 +1,6 @@
 Mida veel vaja õppida?
 Kindlasti süvendan oma teadmisi eelmisel lehel väljatoodud teemade kohta, aga mõned olulisemad teemad veebiarenduse seisukohalt, millega ma veel lähedalt tegelenud ei ole, on:
-<strong>SQL.</strong> Varsti jõuan sinnani!
+<strong>React.</strong> Varsti jõuan sinnani!
 <strong>Node.js.</strong> --||--
-<strong>React.</strong> --||--
+<strong>Andmebaasid.</strong> Mul puudub praktiline kogemus andmebaaside kasutamisega (kuigi SQL-i tunnen!).
 <strong>Raamistikud.</strong> Olen siiamaani teinud oma projektid puhtas Javascriptis, seega ma pole kasutanud TypeScripti ega ka nt PostCSS-i.
