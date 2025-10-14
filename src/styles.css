@@ -30,7 +30,7 @@ header,
 footer,
 .container,
 button {
-    background-color: #353839;
+    background-color: #4a4040;
 }
 
 header {
@@ -68,7 +68,7 @@ button {
         border-radius 0.05s ease-out,
         color 0.05s ease-out;
     cursor: pointer;
-    border: 6px ridge whitesmoke;
+    border: none;
     border-radius: 0.5rem;
 }
 
