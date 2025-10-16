@@ -4,6 +4,7 @@
 }
 
 html {
+    background-color: aliceblue;
     background-image: linear-gradient(185deg, aliceblue, #c3e0ea);
     min-height: 100vh;
 }
@@ -28,7 +29,11 @@ h1 {
 
 header,
 footer,
-.container,
+.container {
+    background-color: #302c2c;
+    background-image: linear-gradient(to bottom, #302c2c, #4a4040);
+}
+
 button {
     background-color: #4a4040;
 }
@@ -41,10 +46,6 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-}
-
-.logo {
-
 }
 
 .logotekst > i {
@@ -64,18 +65,18 @@ button {
     padding: 1rem;
     font-weight: bold;
     font-size: 0.9rem;
-    transition: background-color 0.05s ease-out,
-        border-radius 0.05s ease-out,
-        color 0.05s ease-out;
     cursor: pointer;
     border: none;
     border-radius: 0.5rem;
+    transition: background-color 0.05s ease-out,
+        border-radius 0.05s ease-out,
+        color 0.05s ease-out;
 }
 
 .buttons > button:hover {
     background-color: lightsteelblue;
-    color: blacK;
     border-radius: 1rem;
+    color: black;
     transition: background-color 0.2s ease-out,
         border-radius 0.2s ease-out,
         color 0.2s ease-out;
