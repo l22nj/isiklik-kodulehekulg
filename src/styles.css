@@ -29,13 +29,11 @@ h1 {
 
 header,
 footer,
-.container {
-    background-color: #302c2c;
-    background-image: linear-gradient(to bottom, #302c2c, #4a4040);
-}
-
+.container,
 button {
-    background-color: #4a4040;
+    background-color: #403737;
+    /*background-image: linear-gradient(to bottom, #302c2c, #4a4040);*/
+    /*#423a3a*/
 }
 
 header {
